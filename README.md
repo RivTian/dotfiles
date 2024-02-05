@@ -1,8 +1,8 @@
-# Innei's Dotfiles
+# RivTian's Dotfiles
 
 ### Usage
 
-Install rcm first. then run 
+Install rcm first. then run
 
 ```bash
 cd
@@ -21,6 +21,7 @@ rcup -t nvim
 rcup -t ranger
 ```
 
-NeoVim docs following this: 
+NeoVim docs following this:
 
 [Readme](./tag-nvim/config/nvim/README.md)
+
