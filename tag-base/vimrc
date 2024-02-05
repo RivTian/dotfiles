@@ -1,3 +1,0 @@
-let s:script_path = expand('<sfile>:p:h')
-
-exec 'source ' . s:script_path . '/.config/vim/mapping.vim'

@@ -60,11 +60,11 @@ source "$ANTIGEN"
 # antigen bundle colorize
 # antigen bundle rupa/z z.sh
 antigen bundle git
-antigen bundle autojump
+antigen bundle z
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
-# antigen bundle copypath
+antigen bundle copypath
 antigen bundle sudo
 # antigen bundle willghatch/zsh-cdr
 # antigen theme robbyrussell
@@ -359,4 +359,6 @@ esac
 # pnpm end
 #
 export STARSHIP_LOG=error
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 

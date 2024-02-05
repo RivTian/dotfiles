@@ -85,24 +85,3 @@ defaults com.apple.AdLib allowApplePersonalizedAdvertising -bool false
 defaults com.apple.AdLib allowIdentifierForAdvertising -bool false
 
 sudo spctl --master-disable
-
-# brew install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-brew install rcm
-
-cp -r ~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Config/ssh ~/.ssh
-
-cd
-git clone https://github.com/RivTian/Innei_dotfiles.git .dotfiles
-rcup -t base
-rcup -t fzf-mac
-mkdir -p .config
-# git clone git@github.com:Innei/nvim-config-lua.git ~/.config/nvim
-
-mv .Brewfile Brewfile
-brew bundle install
-
-sudo reboot
