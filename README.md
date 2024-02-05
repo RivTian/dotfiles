@@ -6,7 +6,7 @@ Install rcm first. then run
 
 ```bash
 cd
-git clone https://github.com/Innei/dotfiles --depth=1 ~/.dotfiles
+git clone https://github.com/RivTian/dotfiles.git --depth=1 ~/.dotfiles
 rcup -t base
 ```
 
@@ -24,4 +24,3 @@ rcup -t ranger
 NeoVim docs following this:
 
 [Readme](./tag-nvim/config/nvim/README.md)
-
