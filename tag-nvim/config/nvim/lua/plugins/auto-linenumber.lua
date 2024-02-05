@@ -1,5 +1,5 @@
 return {
-  "sitiom/nvim-numbertoggle",
-  event = "VeryLazy",
-  enabled = true,
+    "sitiom/nvim-numbertoggle",
+    event = "VeryLazy",
+    enabled = true,
 }

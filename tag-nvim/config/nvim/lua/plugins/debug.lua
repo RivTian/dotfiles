@@ -1,8 +1,8 @@
 return {
-  {
-    "tpope/vim-scriptease",
-    cmd = {
-      "Verbose",
+    {
+        "tpope/vim-scriptease",
+        cmd = {
+            "Verbose",
+        },
     },
-  },
 }

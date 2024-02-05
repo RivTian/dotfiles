@@ -1,40 +1,40 @@
 local M = {}
 
 M.float = {
-  winblend = vim.o.winblend,
-  pumblend = vim.o.pumblend,
-  border = "rounded",
-  style = "minimal",
-  size = {
-    width = 0.1,
-    height = 0.1,
-  },
+    winblend = vim.o.winblend,
+    pumblend = vim.o.pumblend,
+    border = "rounded",
+    style = "minimal",
+    size = {
+        width = 0.1,
+        height = 0.1,
+    },
 }
 
 ---@param width 'full'|number
 ---@param height? 'full'|number
 M.float.get_size = function(width, height)
-  width = width or M.float.size.width
-  height = height or width or M.float.size.width
+    width = width or M.float.size.width
+    height = height or width or M.float.size.width
 
-  local size = {
-    width = width,
-    height = height,
-  }
+    local size = {
+        width = width,
+        height = height,
+    }
 
-  if width == "full" then
-    size.width = 100000
-  end
+    if width == "full" then
+        size.width = 100000
+    end
 
-  if height == "full" then
-    size.height = 100000
-  end
+    if height == "full" then
+        size.height = 100000
+    end
 
-  return size
+    return size
 end
 
 M.win = {
-  winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:ISelection,Search:Search",
+    winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:ISelection,Search:Search",
 }
 
 return M

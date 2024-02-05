@@ -13,15 +13,15 @@ vim.api.nvim_create_user_command("Wq", "wq", { bang = true })
 
 vim.fn.system(string.format("kitty @ set-tab-title %q", vim.fs.basename(vim.fn.getcwd())))
 vim.api.nvim_create_autocmd({ "DirChanged" }, {
-  pattern = "*",
-  callback = function()
-    vim.fn.system(string.format("kitty @ set-tab-title %q", vim.fs.basename(vim.fn.getcwd())))
-  end,
+    pattern = "*",
+    callback = function()
+        vim.fn.system(string.format("kitty @ set-tab-title %q", vim.fs.basename(vim.fn.getcwd())))
+    end,
 })
 
 vim.api.nvim_create_user_command("Finder", function()
-  local path = vim.api.nvim_buf_get_name(0)
-  os.execute("open -R " .. path)
+    local path = vim.api.nvim_buf_get_name(0)
+    os.execute("open -R " .. path)
 end, {})
 
 vim.cmd([[
