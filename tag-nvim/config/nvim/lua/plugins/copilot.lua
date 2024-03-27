@@ -1,10 +1,12 @@
 return {
     {
         "zbirenbaum/copilot.lua",
+        -- enabled = false,
         cmd = "Copilot",
         event = "VeryLazy",
         config = function()
             require("copilot").setup({
+                panel = { enabled = false },
 
                 suggestion = {
                     enabled = true,

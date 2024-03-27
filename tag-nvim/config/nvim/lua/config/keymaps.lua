@@ -57,10 +57,11 @@ local nmappings = {
         from = "X",
         to = "r",
     },
-    {
-        from = "r",
-        to = "<c-r>",
-    },
+    -- single char replace in vim
+    -- {
+    --    from = "r",
+    --    to = "<c-r>",
+    -- },
     --
 
     {
